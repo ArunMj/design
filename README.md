@@ -1,14 +1,14 @@
 # design
-
+```
 readTextFile => parseInt => square => writeTextFIle
+```
 
-
-
+```
 IBox: {
 	postion: {x: , y: }
 	id: 
 }
-
+```
 csvReader {
 	uri: file:///tmp/text.txt
 	inferHeaders:
@@ -21,7 +21,7 @@ csvReader {
 			id : "uid"
 		}]
 }
-
+```
 tranformer {
 	id: transformerId
 	slotes:
@@ -35,7 +35,8 @@ tranformer {
 		}
 		modifiers: []
 }
-
+```
+```
 filter {
 	id: transformerId
 	slotes:
@@ -49,7 +50,7 @@ filter {
 		}
 		modifiers: []
 }
-
+```
 
 fun Box.execute(boxContext, outConnections, InConnections): ExecStatus {
 	/*
